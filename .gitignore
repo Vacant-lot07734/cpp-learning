@@ -1,0 +1,4 @@
+./build
+./leetcode.dSYM
+./.idea/
+cmake_install.cmake
