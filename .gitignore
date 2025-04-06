@@ -2,3 +2,4 @@
 ./leetcode.dSYM
 ./.idea/
 cmake_install.cmake
+cmake-build-debug/
