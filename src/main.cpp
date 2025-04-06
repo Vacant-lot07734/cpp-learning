@@ -4,9 +4,9 @@
 #include <functional>
 #include <iostream>
 #include <vector>
-#include "blockingqueue/test.cpp"
+#include "smartpointer/shared_ptr_t1.h"
 
 
 int main() {
-
+    sp_test();
 }

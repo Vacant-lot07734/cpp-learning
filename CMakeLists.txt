@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(leetcode)
+project(cpp-learning)
 
 set(CMAKE_CXX_STANDARD 23)
 
@@ -23,4 +23,5 @@ add_executable(main src/template/sfinae.cpp
         src/function/func_ptr.h
         src/function/bind.h
         src/function/ref.h
+        src/smartpointer
 )
