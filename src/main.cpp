@@ -8,5 +8,5 @@
 
 
 int main() {
-    sp_test();
+    sp_test2();
 }
