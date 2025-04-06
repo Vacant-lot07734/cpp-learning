@@ -10,11 +10,9 @@ add_executable(main src/template/sfinae.cpp
         src/c_defination/def.h
         src/c_defination/def.cpp
         src/vector_bool.cpp
-        src/blockingqueue/blockingqueue.h
-        src/blockingqueue/blockingqueue.cpp
-        src/blockingqueue/test.cpp
+        src/blockingqueue/blockingqueue.tpp
+        src/blockingqueue/bqtest.h
         src/main.cpp
-        src/blockingqueue/test2.cpp
         src/perfect_forward/forward.h
         src/perfect_forward/test.h
         src/template/templateDeduce.h
@@ -23,4 +21,6 @@ add_executable(main src/template/sfinae.cpp
         src/function/func_ptr.h
         src/function/bind.h
         src/function/ref.h
+        src/blockingqueue/bqtest2.h
+        src/smartpointer/shared_ptr.tpp
 )

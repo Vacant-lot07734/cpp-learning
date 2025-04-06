@@ -1,0 +1,3 @@
+/Users/vacantlot/Jetbrain/Clion/project/cpp-learning/cmake-build-debug/CMakeFiles/main.dir
+/Users/vacantlot/Jetbrain/Clion/project/cpp-learning/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vacantlot/Jetbrain/Clion/project/cpp-learning/cmake-build-debug/CMakeFiles/rebuild_cache.dir

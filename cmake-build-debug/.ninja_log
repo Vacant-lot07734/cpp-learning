@@ -1,0 +1,9 @@
+# ninja log v6
+0	36	1743915358100523050	build.ninja	9f5e534e3dd7e10b
+1	24	1743762444065827733	CMakeFiles/main.dir/src/template/templateTest.cpp.o	652fbadb6914f92e
+1	308	1743762444065931567	CMakeFiles/main.dir/src/random.cpp.o	afdfb9cbe421f6d9
+1	337	1743762444065656067	CMakeFiles/main.dir/src/template/sfinae.cpp.o	80951e81f7ef33ee
+1	330	1743762444066025067	CMakeFiles/main.dir/src/c_defination/def.cpp.o	56ed6a27d9226721
+1	339	1743762444066123400	CMakeFiles/main.dir/src/vector_bool.cpp.o	8c0849ad4f7b726e
+4	411	1743771120649241033	CMakeFiles/main.dir/src/main.cpp.o	ea9dc356403ba6eb
+411	441	1743771121055853432	main	caec481fe4a8e8b
