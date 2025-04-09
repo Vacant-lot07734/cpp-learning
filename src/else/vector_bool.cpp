@@ -5,7 +5,8 @@
 #include <vector>
 int func() {
     // 并非真正的vector容器，事实上压缩存储了，每个元素只占一位
-    std::vector<bool> x = {true, true, false, true, false,true, true, true, false, true};
+    std::vector<bool> x(2);
+//    std::vector<bool> x = {true, true, false, true, false,true, true, true, false, true};
     // reference
     auto y = x[1];
     // 隐式类型转换

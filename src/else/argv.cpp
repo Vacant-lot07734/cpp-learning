@@ -3,7 +3,7 @@
 //
 #include <iostream>
 using namespace std;
-int main(int argc, char **argv) {
+int maintest(int argc, char **argv) {
     std::cout<<argc<<endl;
     cout<<argv[0]<<" "<<argv[1];
     return 0;

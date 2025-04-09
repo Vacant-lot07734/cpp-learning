@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../c_defination/def.h"
 #include <string>
 using namespace std;
 

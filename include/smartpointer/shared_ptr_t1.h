@@ -1,6 +1,7 @@
 //
 // Created by Vacant lot on 2025/4/6.
 //
+#pragma once
 #include <iostream>
 
 class A {
