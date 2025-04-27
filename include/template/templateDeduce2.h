@@ -5,7 +5,6 @@
 #ifndef TEMPLATEDEDECE2_H
 #define TEMPLATEDEDECE2_H
 
-#endif //TEMPLATEDEDECE2_H
 #include <iostream>
 // 重载1：处理左值（T被推导为左值引用类型）
 template<typename T>
@@ -29,5 +28,5 @@ int template_deduce() {
     func(std::move(z));
     std::cout<<std::type_index(typeid(2.2)).name()<<std::endl;
 }
-
+#endif TEMPLATEDEDECE2_H
 

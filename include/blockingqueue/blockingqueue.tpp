@@ -8,6 +8,7 @@
 #include <condition_variable>
 #include <deque>
 #include <chrono>
+#include <iostream>
 // 可以进一步优化的点：
 // 阻塞等待时间不局限与chrono::milliseconds,使用模板支持更多
 template<class T>

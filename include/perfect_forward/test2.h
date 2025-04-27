@@ -7,7 +7,6 @@
 
 #endif //TEST2_H
 #include <iostream>
-#include <type_traits>
 #include <utility>
 
 template<typename T>

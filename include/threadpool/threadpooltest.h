@@ -1,13 +1,12 @@
 //
 // Created by Vacant lot on 2025/4/15.
 //
+#pragma once
 #include <functional>
 #include <iostream>
-#include <vector>
 #include <thread>
 #include <algorithm>
-
-#include "../blockingqueue/blockingqueue.tpp"
+#include "blockingqueue/blockingqueue.tpp"
 #include "threadpool.h"
 #include "rejecthandle.h"
 using namespace std;

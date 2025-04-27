@@ -6,7 +6,7 @@
 #define TEMPLATEDEDUCE_H
 #include <iostream>
 
-#endif //TEMPLATEDEDUCE_H
+
 template<typename T1, typename T2>
 void func1(T1 x, T2 y) {
     std::cout << "最普通版本" << std::endl;
@@ -49,3 +49,4 @@ void templateDeduceTest() {
     int *y = new int(2);
     func1(x, y);
 }
+#endif //TEMPLATEDEDUCE_H

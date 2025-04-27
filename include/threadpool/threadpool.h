@@ -11,7 +11,6 @@
 #include <atomic>
 #include <chrono>
 #include <functional>
-#include <iostream>
 #include <algorithm>
 #include "../blockingqueue/blockingqueue.tpp"
 #include "rejecthandle.h"

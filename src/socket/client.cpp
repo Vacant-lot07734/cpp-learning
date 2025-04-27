@@ -12,8 +12,7 @@
 //#include <sys/unistd.h>
 #include <unistd.h>
 #define BUFFSIZE 2048
-#define SERVER_IP                                                              \
-"192.168.19.12" // 指定服务端的IP，记得修改为你的服务端所在的ip
+#define SERVER_IP "192.168.19.12" // 指定服务端的IP，记得修改为你的服务端所在的ip
 #define SERVER_PORT 16555 // 指定服务端的port
 
 // 1. socket()           创建套接字
@@ -21,7 +20,7 @@
 // 3. read()/write()     通信（收发数据） send recn
 // 4. close()            关闭连接
 
-int main() {
+int client_main() {
     struct sockaddr_in servaddr;
     char buff[BUFFSIZE];
     int sockfd;

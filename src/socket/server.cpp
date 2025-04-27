@@ -29,7 +29,7 @@ void stopServerRunning(int p) {
 // 5. read()/write()     通信（收发数据） recv send
 // 6. close()            关闭连接
 
-int main() {
+int server_main() {
   struct sockaddr_in servaddr; // 用于存放ip和端口的结构
   char buff[BUFFSIZE];         // 用于收发数据
 
