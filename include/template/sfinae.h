@@ -26,11 +26,11 @@ public:
             std::cout << buffer[idx++] << std::endl;
         }
     }
+
     void append(char c, size_t count) {
         if (idx + count > size) {
             std::cerr << "buffer overflow" << std::endl;
-        }
-        else {
+        } else {
             memset(buffer + idx, c, count);
             for (int i = 0; i < count; i++) {
                 std::cout << buffer[idx];
@@ -38,15 +38,17 @@ public:
             idx += count;
         }
     }
+
     template<typename Iter, typename = std::enable_if_t<
         !std::is_integral<Iter>::value> >
+    // 等价
+    // template<typename Iter, typename = typename std::enable_if<!std::is_integral<Iter>::value>::type>
     void append(Iter bp, Iter ep) {
         size_t count = std::distance(bp, ep);
         // size_t count = ep - bp;
         if (idx + count > size) {
             std::cerr << "buffer overflow" << std::endl;
-        }
-        else {
+        } else {
             auto it = bp;
             while (it != ep) {
                 buffer[idx++] = *it;
@@ -63,22 +65,17 @@ int MainThread() {
     while (cin >> n) {
         if (n > 0) {
             buf.append('a', n);
-        }
-        else if (n == -1) {
+        } else if (n == -1) {
             buf.append('b');
-        }
-        else if (n < -1) {
+        } else if (n < -1) {
             buf.append(97, abs(n));
-        }
-        else if (n == 0) {
+        } else if (n == 0) {
             string str("12345");
             buf.append(str.begin(), str.end());
             std::iterator_traits<decltype(str.begin())> x;
-
         }
     }
     string s = "sfs";
     s.data();
     cout << "begin\n" << buf.buffer << endl << "end\n";
-
 }

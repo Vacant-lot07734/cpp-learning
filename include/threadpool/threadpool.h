@@ -27,11 +27,11 @@ public:
     MyThreadPool(int coreSize, int maxSize, const std::chrono::milliseconds timeoutMs,
                  std::unique_ptr<BlockQueue<Task> > queue,
                  RejectHandle *rejectHandler)
-        : corePoolSize(coreSize),
+        : blockingQueue(std::move(queue)),
+          rejectHandle(rejectHandler),
+          corePoolSize(coreSize),
           maxPoolSize(maxSize),
-          timeout(timeoutMs),
-          blockingQueue(std::move(queue)),
-          rejectHandle(rejectHandler) {
+          timeout(timeoutMs) {
     }
 
     ~MyThreadPool() {

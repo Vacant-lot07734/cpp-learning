@@ -7,6 +7,25 @@
 #include<vector>
 #include<iostream>
 using namespace std;
+
+template<size_t m, size_t n >
+// using matrix = vector<m,vector<int>(n)>; error
+using matrix = std::array<std::array<int, n>, m>;
+
+template<size_t m, size_t k, size_t n>
+auto matrix_mul(const matrix<m, k> &a, const matrix<k, n> &b) {
+    matrix<m, n> ret{};
+    for (size_t i = 0; i < m; ++i ) {
+        for (size_t r = 0; r < k; ++r ) {
+            if (a[i][r] == 0) continue;
+            for (int j = 0; j < n; ++j ) {
+                ret[i][j] += a[i][r] * b[r][j];
+            }
+        }
+    }
+    return ret;
+}
+
 void func1(vector<vector<int> > &matrix) {
     // 1 2 3 6 9 8 7 4 5
     int left = 0, right = matrix[0].size() - 1, top = 0, bottom = matrix.size() - 1;
